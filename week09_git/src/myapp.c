@@ -1,7 +1,25 @@
-#include <stdio.h>
+#include "myops.h"
 
 double calculate(char *op, double a, double b) {
     printf("Calculating.....\n");
+
+    if (strcmp(op, "+") == 0) {
+        return myadd(a, b);
+    }
+    else if (strcmp(op, "") == 0) {
+        return mysub(a, b);
+    }
+    else if (strcmp(op, "*") == 0) {
+        return mymul(a, b);
+    }
+    else if (strcmp(op, "/") == 0) {
+        return mydiv(a, b);
+    }
+
+    else {
+        printf("Unsupported operation: %s\n", op);
+        return 0;
+    }
 }
 
 int main() {
@@ -11,7 +29,7 @@ int main() {
     printf("~~~ Whlcome to my calculator ~~~\n\n");
     printf("Emter expression (e.g. 1 + 2): ");
     scanf("%lf %s %lf", &a, op, &b);
-    printf("Resi;t = %.2lf\n", calculate(op, a, b));
+    printf("Result = %.2lf\n", calculate(op, a, b));
 
     return 0;
 }
