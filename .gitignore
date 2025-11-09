@@ -1,0 +1,8 @@
+**/bin/
+**/obj/
+**/lib/
+mv_man.txt
+week04.tar.bz2
+week04.tar.gz
+week04.tar.xz
+week06.tar.gz
