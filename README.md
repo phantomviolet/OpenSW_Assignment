@@ -24,4 +24,5 @@ Each directory corresponds to a specific assignment or lecture.
 * **`week07_gcc/`**: Assignments on using the GCC compiler and linking.
 * **`week08_make/`**: Introduction to Makefiles for project automation.
 * **`week08_make_v2/`**: Advanced Makefiles, including recursive call.
-* **`week09_git/`**: Assignments on Git version control (branching, merging).
+* **`week09_git/`**: Assignments on Git version control (branching merging).
+* **`week11_syscall_file/`**: File I/O system calls.
